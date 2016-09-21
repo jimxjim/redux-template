@@ -8,7 +8,7 @@ import settings from './config/EnvSettings';
 import DevTools from './containers/DevTools';
 import IndexPage from './components/IndexPage';
 import LandingPage from './components/LandingPage';
-
+import SimpleForm from './components/SimpleForm';
 import { startup } from './actions/StartUp';
 import { getRepoRequest } from './actions/Repo';
 
@@ -37,6 +37,11 @@ export default class App extends Component {
               <Route path="/">
                 <IndexRoute component={IndexPage} />
               </Route>
+              <Route path="test">
+                <IndexRoute component={SimpleForm} />
+              </Route>
+
+
             </Router>
             {(settings.env === '__DEV__') ? <DevTools /> : null}
           </div>

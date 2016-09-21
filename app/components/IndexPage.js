@@ -7,7 +7,7 @@ const IndexPage = (props) => {
   const { t } = props;
   return (
     <div>
-      <Link to="/welcome">{t('welcome')}</Link>
+      <Link to="/test">{t('welcome')}</Link>
       <Header />
       <Button />
       <Footer />
